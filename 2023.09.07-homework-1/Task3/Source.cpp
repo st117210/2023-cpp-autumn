@@ -1,8 +1,9 @@
 #include<iostream>
 int main() {
-	int long long a;
+	int long long a = 0;
+	int long long b = 0;
 	std::cin >> a;
-	int long long b = a / 10;
+	b = a / 10;
 	std::cout << b * (b + 1) * 100 + 25;
 	return 0;
 }

@@ -1,6 +1,8 @@
 #include<iostream>
 int main() {
-	int a, b, c;
+	int a = 0;
+	int b = 0;
+	int c = 0;
 	std::cin >> a;
 	b = a + 1;
 	c = a - 1;

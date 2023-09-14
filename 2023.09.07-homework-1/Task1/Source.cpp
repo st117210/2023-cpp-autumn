@@ -1,6 +1,7 @@
 #include<iostream>
 int main() {
-	int a, b;
+	int a = 0;
+	int b = 0;
 	std::cin >> a >> b;
 	std::cout << a + b;
 	return 0;
