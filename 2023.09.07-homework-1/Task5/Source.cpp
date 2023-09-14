@@ -1,10 +1,9 @@
 #include <iostream>
-using namespace std;
 int main() {
-	int V, T, S, km;
-	cin >> V >> T;
-	S = (V * T) % 109;
-	km = 1 + (S + 109) % 109;
-	cout << km;
+	int v, t, s, km;
+	std::cin >> v >> t;
+	s = (v * t) % 109;
+	km = 1 + (s + 109) % 109;
+	std::cout << km;
 	return 0;
 }

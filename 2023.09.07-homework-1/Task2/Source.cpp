@@ -1,10 +1,9 @@
 #include<iostream>
-using namespace std;
 int main() {
 	int a, b, c;
-	cin >> a;
+	std::cin >> a;
 	b = abs(a - 1) + 1;
 	c = ((a + 1) * b) / 2;
-	cout << c;
+	std::cout << c;
 	return 0;
 }

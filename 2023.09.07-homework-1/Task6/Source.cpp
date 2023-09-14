@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
 int main() {
 	int a, b, c;
-	cin >> a >> b;
+	std::cin >> a >> b;
 	c = (((a / b) * a) + ((b / a) * b)) / ((a / b) + (b / a));
-	cout << c;
+	std::cout << c;
 	return 0;
 }
