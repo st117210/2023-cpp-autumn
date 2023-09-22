@@ -10,8 +10,6 @@
 *.userosscache
 *.sln.docstates
 *.vcxproj
-*.filters
-*.user
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -72,6 +70,8 @@ ScaffoldingReadMe.txt
 StyleCopReport.xml
 
 # Files built by Visual Studio
+*.filters
+*.user
 *_i.c
 *_p.c
 *_h.h
