@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 int main() {
 	int k = 0;
 	int m = 0;
