@@ -1,5 +1,6 @@
 #include<iostream>
-int main() {
+int main() 
+{
 	int long long a = 0;
 	int long long b = 0;
 	std::cin >> a;

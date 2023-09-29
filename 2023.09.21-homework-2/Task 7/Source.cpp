@@ -1,12 +1,16 @@
 #include <iostream>
-int main() {
+int main() 
+{
 	int x = 0;
 	std::cin >> x;
-	if (x == 100) {
+	if (x == 100) 
+	{
 		std::cout << "C";
 	}
-	else {
-		switch (x / 10) {
+	else 
+	{
+		switch (x / 10) 
+		{
 		case 1:
 			std::cout << "X";
 			break;

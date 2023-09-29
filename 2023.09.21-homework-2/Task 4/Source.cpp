@@ -1,5 +1,6 @@
 #include <iostream>
-int main() {
+int main() 
+{
 	int n = 0;
 	int a = 0;
 	int b = 0;
@@ -21,22 +22,26 @@ int main() {
 	b = n / 5;
 	n %= 5;
 	a = n;
-	if (a * P1 >= P5) {
+	if (a * P1 >= P5) 
+	{
 		a = 0;
 		b += 1;
 	}
-	if (a * P1 + b * P5 >= P10) {
+	if (a * P1 + b * P5 >= P10) 
+	{
 		a = 0;
 		b = 0;
 		c += 1;
 	}
-	if (a * P1 + b * P5 + c * P10 >= P20) {
+	if (a * P1 + b * P5 + c * P10 >= P20)
+	{
 		a = 0;
 		b = 0;
 		c = 0;
 		d += 1;
 	}
-	if (a * P1 + b * P5 + c * P10 + d * P20 >= P60) {
+	if (a * P1 + b * P5 + c * P10 + d * P20 >= P60)
+	{
 		a = 0;
 		b = 0;
 		c = 0;

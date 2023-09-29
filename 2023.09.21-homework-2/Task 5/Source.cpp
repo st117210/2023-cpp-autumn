@@ -1,8 +1,10 @@
 #include <iostream>
-int main() {
+int main() 
+{
 	int n = 0;
 	std::cin >> n;
-	if (((n % 100) >= 11) && ((n % 100) <= 14)) {
+	if (((n % 100) >= 11) && ((n % 100) <= 14))
+	{
 		switch (n % 100)
 		{
 		case 11: case 12: case 13: case 14:
@@ -13,7 +15,8 @@ int main() {
 			break;
 		}
 	}
-	else {
+	else 
+	{
 		switch (n % 10)
 		{
 		case 1:
