@@ -7,13 +7,16 @@ int main() {
 	int b = 0;
 	int t = 0;
 	std::cin >> k >> m >> n;
-	if (n >= k) {
+	if (n >= k) 
+	{
 		a = (2 * n) / k;
 		b = ((2 * n - (a * k)) % k) != 0;
 		t = a * m + b * m;
 	}
-	else {
+	else
+	{
 		t = 2 * m;
 	}
 	std::cout << t;
+	return 0;
 }

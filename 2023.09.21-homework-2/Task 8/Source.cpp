@@ -4,32 +4,41 @@ int main() {
 	int b = 0;
 	int c = 0;
 	std::cin >> a >> b >> c;
-	if (a <= b && a <= c) {
+	if (a <= b && a <= c)
+	{
 		std::cout << a << " ";
-		if (b <= c) {
+		if (b <= c)
+		{
 			std::cout << b << " " << c;
 		}
-		else {
+		else
+		{
 			std::cout << c << " " << b;
 		}
 	}
-	else if (b <= a && b <= c) {
+	else if (b <= a && b <= c)
+	{
 		std::cout << b << " ";
-		if (a <= c) {
+		if (a <= c)
+		{
 			std::cout << a << " " << c;
 		}
-		else {
+		else
+		{
 			std::cout << c << " " << a;
 		}
 	}
-	else {
+	else
+	{
 		std::cout << c << " ";
-		if (a <= b) {
+		if (a <= b)
+		{
 			std::cout << a << " " << b;
 		}
-		else {
+		else
+		{
 			std::cout << b << " " << a;
 		}
 	}
-		return 0;
+	return 0;
 }
