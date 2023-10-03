@@ -1,11 +1,14 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int a = 0;
+	std::cin >> a;
+
 	int b = 0;
 	int n = 0;
 	int q = 0;
-	std::cin >> a;
+
 	for (int i = 10; a != 0; i)
 	{
 		q = a % i;
@@ -18,6 +21,8 @@ int main()
 			--n;
 		}
 	}
+
 	std::cout << b;
-	return 0;
+
+	return EXIT_SUCCESS;
 }

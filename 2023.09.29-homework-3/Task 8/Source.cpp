@@ -1,24 +1,29 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int a = 0;
 	int b = 0;
 	int n = 0;
+
 	std::cin >> a;
 	std::cin >> b;
 	std::cin >> n;
+
 	int gcd = 0;
-	int i = 0;
-	char va = 'A';
-	char vb = 'B';
 	int x = a;
 	int y = b;
+
 	while (y != 0)
 	{
 		gcd = x % y;
 		x = y;
 		y = gcd;
 	}
+
+	char va = 'A';
+	char vb = 'B';
+
 	if (b < a)
 	{
 		va = 'B';
@@ -27,17 +32,20 @@ int main()
 		a = b;
 		b = gcd;
 	}
+
 	if (b == n)
 	{
 		std::cout << ">" << vb;
 		return 0;
 	}
+
 	if (((n > a) && (n > b)) || (n % x != 0))
 	{
 		std::cout << "Impossible";
 	}
 	else
 	{
+		int i = 0;
 		while (true)
 		{
 			i += a;
@@ -55,5 +63,6 @@ int main()
 			}
 		}
 	}
-	return 0;
+
+	return EXIT_SUCCESS;
 }

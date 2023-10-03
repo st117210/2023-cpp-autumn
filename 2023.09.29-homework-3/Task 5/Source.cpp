@@ -1,9 +1,11 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int k = 0;
-	int n = 0;
 	std::cin >> k;
+	
+	int n = 0;
 	for (int i = 0; i <= k; ++i)
 	{
 		int f = i;
@@ -18,6 +20,8 @@ int main()
 			++n;
 		}
 	}
+
 	std::cout << n - 1;
-	return 0;
+
+	return EXIT_SUCCESS;
 }

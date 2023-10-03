@@ -1,10 +1,13 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int a = 0;
 	int b = 0;
+
 	std::cin >> a;
 	std::cin >> b;
+
 	for (int i = 0; a != b; ++i)
 	{
 		if ((a % 2 == 0) && (a / 2 >= b))
@@ -18,5 +21,6 @@ int main()
 			std::cout << "-1" << std::endl;
 		}
 	}
-	return 0;
+
+	return EXIT_SUCCESS;
 }

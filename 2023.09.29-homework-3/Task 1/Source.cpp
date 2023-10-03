@@ -1,9 +1,11 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int time = 0;
-	int l = 1;
 	std::cin >> time;
+
+	int l = 1;
 	for (int i = 1; l <= time; i++)
 	{
 		for (int q = 1; (q <= i) && (l <= time); q++)
@@ -12,5 +14,6 @@ int main()
 			l++;
 		}
 	}
-	return 0;
+
+	return EXIT_SUCCESS;
 }

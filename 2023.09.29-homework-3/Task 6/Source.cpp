@@ -1,11 +1,14 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int n = 0;
+	std::cin >> n;
+
 	int phi_n = 0;
 	int phi1 = 1;
 	int phi2 = 1;
-	std::cin >> n;
+
 	switch (n)
 	{
 	case 0:
@@ -26,5 +29,6 @@ int main()
 		std::cout << phi_n;
 		break;
 	}
-	return 0;
+
+	return EXIT_SUCCESS;
 }

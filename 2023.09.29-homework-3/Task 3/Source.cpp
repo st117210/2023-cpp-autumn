@@ -1,9 +1,12 @@
 #include <iostream>
-int main()
+
+int main(int argc, char* argv[])
 {
 	int a = 0;
-	int n = 0;
 	std::cin >> a;
+
+	int n = 0;
+
 	int i = 1;
 	while (i * i < a)
 	{
@@ -13,10 +16,13 @@ int main()
 		}
 		++i;
 	}
+
 	if (i * i == a)
 	{
 		++n;
 	}
+
 	std::cout << n;
-	return 0;
+
+	return EXIT_SUCCESS;
 }
