@@ -11,13 +11,20 @@ int main(int argc, char* argv[])
 
 	binaryNumber(n);
 
-	unsigned int mask = 0;
-	mask = ~mask;
-	mask >>= (firstbit(n) - lastbit(n) + 1);
-	mask = ~mask;
-	mask >>= (32 - firstbit(n) - 1);
+	if (n == 0)
+	{
+		n = ~n;
+	}
+	else
+	{
+		unsigned int mask = 0;
+		mask = ~mask;
+		mask >>= (firstbit(n) - lastbit(n) + 1);
+		mask = ~mask;
+		mask >>= (32 - firstbit(n) - 1);
 
-	n ^= mask;
+		n ^= mask;
+	}
 
 	binaryNumber(n);
 
