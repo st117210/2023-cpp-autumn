@@ -1,7 +1,7 @@
 #pragma once
 
 #include<iostream>
-#include <ctime>
+#include<ctime>
 
 void printArray(int* a, int len);
 void expandArray(int*& a, int& len);
