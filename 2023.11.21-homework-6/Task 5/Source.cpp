@@ -29,7 +29,8 @@ int main() {
 	{
 		hanoi(n, 1, 2);
 	}
-	return 0;
+
+	return EXIT_SUCCESS;
 }
 
 void hanoi(int n, int from, int to)
