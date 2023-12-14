@@ -14,7 +14,6 @@ int main(int argc, char* argv[])
 	}
 	fin.close();
 
-	int countTochek = 0;
 	int ykaz = 0;
 	int* tt = new int[text.size()] { 0 };
 	for (int i = 0; i < text.size(); i++)

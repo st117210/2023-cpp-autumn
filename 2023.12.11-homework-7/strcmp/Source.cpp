@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 
+int strLen(char* str);
 int strcmpp(char* string1, char* string2);
 
 int main(int argc, char* argv[])
@@ -21,9 +22,16 @@ int main(int argc, char* argv[])
 	return EXIT_SUCCESS;
 }
 
+int strLen(char* str)
+{
+	int res = 0;
+	while (str[res++] != '\0');
+	return res;
+}
+
 int strcmpp(char* string1, char* string2)
 {
-	int l = strlen(string1) > strlen(string2) ? strlen(string1) : strlen(string2);
+	int l = strLen(string1) > strLen(string2) ? strLen(string1) : strLen(string2);
 	int count = 0;
 	for (int i = 0; i < l; i++)
 	{
@@ -46,7 +54,7 @@ int strcmpp(char* string1, char* string2)
 		}
 	}
 
-	if (strlen(string1) == strlen(string2) && count == strlen(string1))
+	if (strLen(string1) == strLen(string2) && count == strLen(string1))
 	{
 		return 0;
 	}

@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 
+int strLen(char* str);
 char* subbstr(char* string, int lenstr, int start);
 
 int main(int argc, char* argv[])
@@ -30,9 +31,16 @@ int main(int argc, char* argv[])
 	return EXIT_SUCCESS;
 }
 
+int strLen(char* str)
+{
+	int res = 0;
+	while (str[res++] != '\0');
+	return res;
+}
+
 char* subbstr(char* string, int lenstr, int start)
 {
-	int l = strlen(string);
+	int l = strLen(string);
 	if (lenstr <= 0 && start >= l)
 	{
 		return 0;

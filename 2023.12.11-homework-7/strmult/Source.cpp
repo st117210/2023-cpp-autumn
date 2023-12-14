@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 
+int strLen(char* str);
 char* strmultt(char* string, int n);
 
 int main(int argc, char* argv[])
@@ -23,14 +24,21 @@ int main(int argc, char* argv[])
 	return EXIT_SUCCESS;
 }
 
+int strLen(char* str)
+{
+	int res = 0;
+	while (str[res++] != '\0');
+	return res;
+}
+
 char* strmultt(char* string, int n)
 {
-	int l = (strlen(string)) * n;
+	int l = (strLen(string)) * n;
 	char* copy = (char*)malloc(sizeof(char*) * l);
 	int k = 0;
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < strlen(string); j++)
+		for (int j = 0; j < strLen(string); j++)
 		{
 			copy[k] = string[j];
 			++k;
