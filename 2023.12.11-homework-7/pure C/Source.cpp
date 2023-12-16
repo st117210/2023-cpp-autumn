@@ -65,6 +65,7 @@ int main(int argc, char** argv)
 	{
 		fprintf(f, "%c", text[i]);
 	}
+	fprintf(f, "\n%d - all word in file", words);
 	fclose(f);
 
 	free(text);
