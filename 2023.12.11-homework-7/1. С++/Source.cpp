@@ -18,11 +18,7 @@ int main(int argc, char* argv[])
 	int* tt = new int[text.size()] { 0 };
 	for (int i = 0; i < text.size(); i++)
 	{
-		if (text[i] == ' ' || text[i] == '!' || text[i] == '?' || text[i] == ',' || text[i] == '.' || text[i] == ':' ) //you can add other characters (example, numbers)
-		{
-			text[i] = ' ';
-		}
-		else
+		if (text[i] != ' ' && text[i] != '!' && text[i] != '?' && text[i] != ',' && text[i] != '.' && text[i] != ':') //you can add other characters (example, numbers)
 		{
 			tt[ykaz] = i;
 			++ykaz;
@@ -179,7 +175,6 @@ int main(int argc, char* argv[])
 	delete[] lettersArr;
 	delete[] ykazHaClovo;
 	delete[] dlinaClova;
-
 
 	return EXIT_SUCCESS;
 }
