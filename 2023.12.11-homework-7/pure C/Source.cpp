@@ -43,7 +43,6 @@ int main(int argc, char** argv)
 		{
 			beginS1 = endS1;
 			endS1 = i;
-			++words;
 			++wordsInS;
 
 			if (maxNumWords < wordsInS)
@@ -65,7 +64,7 @@ int main(int argc, char** argv)
 	{
 		fprintf(f, "%c", text[i]);
 	}
-	fprintf(f, "\n%d - all word in file", words);
+	fprintf(f, "\n%d - all words in file", words + 1);
 	fclose(f);
 
 	free(text);
