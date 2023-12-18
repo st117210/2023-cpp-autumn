@@ -34,7 +34,7 @@ int main(int argc, char** argv)
 	for (int i = 0; i < countChar; i++)
 	{
 		
-		if (text[i] == ' ')
+		if (text[i] == ' ' || text[i] == '\n')
 		{
 			++words;
 			++wordsInS;
@@ -43,7 +43,6 @@ int main(int argc, char** argv)
 		{
 			beginS1 = endS1;
 			endS1 = i;
-			++wordsInS;
 
 			if (maxNumWords < wordsInS)
 			{
